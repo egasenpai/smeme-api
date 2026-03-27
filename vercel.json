@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/meme.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/meme.js": {
+      "runtime": "edge"
     },
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
+    "api/index.js": {
+      "runtime": "edge"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/meme",
