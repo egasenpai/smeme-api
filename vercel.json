@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/meme", "dest": "/api/meme.js" },
+    { "src": "/", "dest": "/api/index.js" }
+  ]
+}
